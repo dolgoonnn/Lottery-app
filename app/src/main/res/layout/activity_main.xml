@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textSize="25sp"
+        android:layout_marginTop="3pt"
+        android:text="Lottery"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3pt">
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5pt"
+            android:id="@+id/firstnumber"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:text="01" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5pt"
+            android:id="@+id/secondnumber"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:text="02" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5pt"
+            android:id="@+id/thirdnumber"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:text="03" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5pt"
+            android:id="@+id/fourthnumber"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:text="04" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5pt"
+            android:id="@+id/fifthnumber"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:text="05" />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textSize="25sp"
+        android:layout_marginTop="3pt"
+        android:text="Your number"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3pt">
+
+        <EditText
+            android:id="@+id/firstguess"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginRight="5pt"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:text="01" />
+
+        <EditText
+            android:id="@+id/secondguess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5pt"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:text="02" />
+
+        <EditText
+            android:id="@+id/thirdguess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5pt"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:text="03" />
+
+        <EditText
+            android:id="@+id/fourthguess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5pt"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:text="04" />
+
+        <EditText
+            android:id="@+id/fifthguess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5pt"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:text="05" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="80dp"
+        android:layout_width="wrap_content" />
+    <Button
+        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="8pt"
+        android:text="Generate"
+        android:id="@+id/generateButton"/>
+
+</LinearLayout>
